@@ -27,6 +27,7 @@ class Journal:
 
 
 class PersistenceManager:
+    @staticmethod
     def save_to_file(journal, filename):
         file = open(filename, "w")
         file.write(str(journal))
@@ -39,7 +40,7 @@ j.add_entry("I ate a bug.")
 print(f"Journal entries:\n{j}\n")
 
 p = PersistenceManager()
-file = r'c:\temp\journal.txt'
+file = r'c:\code\p.txt'
 p.save_to_file(j, file)
 
 # verify!
