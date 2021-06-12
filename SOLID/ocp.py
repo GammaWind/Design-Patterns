@@ -1,6 +1,9 @@
 from enum import Enum
 
+'''
+Specification pattern is implemented here to maintain OCP
 
+'''
 class Color(Enum):
     RED = 1
     GREEN = 2
